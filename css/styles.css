@@ -6,11 +6,28 @@
 }
 
 body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
     background-color: #f4f4f4;
 }
+
+@media only screen and (min-width: 600px) {
+    body {
+      max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+      max-width: 60%;
+    }
+}
+
+
 
 header {
     background: #333;
@@ -38,6 +55,13 @@ main {
     margin: 20px 0;
 }
 
+p {
+    font-size: 20px;
+}
+li {
+    font-size: 20px;
+}
+
 article {
     background: #fff;
     padding: 20px;
@@ -56,5 +80,7 @@ footer {
 
 .profile img {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
 }

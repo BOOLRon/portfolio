@@ -24,7 +24,7 @@
             </div>
             <div class="bio">
                 <h2>About Me</h2>
-                <p>Then after 3 years, the PHP department was closed due to the company's business transformation, and the Java department was established. I have been engaged in Java development for 6 years. Open my String life...</p>
+                <p>The PHP department was closed after 3 years due to the company's business transformation, and the Java department was established. I have been engaged in Java development for over 6 years, which opened my String life.</p>
             </div>
             <br/>
         </section>
@@ -32,8 +32,9 @@
         <article>
             <h2>The car dating circle system</h2>
             <p>Published on: <time datetime="2021-12-14">December 14, 2021</time></p>
-            <p>This is a car dating circle client used by overseas Chinese in Canada; the backend management includes user management, topic management, car dating circle management, store management, broker management, vehicle management, operation management, etc.</p>
-            <p>Technology stack and difficulties: The Spring boot 2.1 framework is used as the backend, and Vue.js 2.6 is used as the front-end and backend management pages; the difficulty is to synchronize the vehicle data module and the car selection search module. Since the vehicle data needs to be synchronized with a third-party interface, I first obtain all vehicle brands, and the number is approximately 40, using asynchronous batch execution, ensuring thread safety through redis, retaining a field to record whether the synchronization is complete, and then calling the interface brand by brand, inserting mysql in batches, executing all brands in a loop, and finally modifying the field to be complete. Several car configuration parameters in the car selection search module require full-text fuzzy search. I synchronized the vehicle data in mysql to the Elasticsearch system. After all vehicle information is synchronized with mysql, I immediately start the Elasticsearch synchronization, which can greatly optimize the search speed.</p>
+            <p>This car dating circle client is used by overseas Chinese in Canada; the backend management module includes users, topics, car dating circles, stores, brokers, vehicles, operations, and other modules.</p>
+            <br>
+            <p>Technology stack and difficulties: The Spring boot 2.1 framework is used as the backend, and Vue.js 2.6 is used as the front-end and backend management pages; the difficulty is in synchronizing the vehicle data module and the car selection search module. At first, I obtained all vehicle brands since the vehicle data needs to be synchronized with a third-party interface. The number is approximately 40, using asynchronous batch execution, ensuring thread safety through Redis, retaining a field to record whether the synchronization is complete, and then calling the interface brand by brand, inserting MySQL in batches, executing all brands in a loop, and finally modifying the field to be complete. Several car configuration parameters in the car selection search module require full-text fuzzy search. I synchronized the vehicle data in MySQL to the Elasticsearch system. After synchronizing all vehicle information with MySQL, I immediately start the Elasticsearch synchronization, which can significantly optimize the search speed.</p>
         </article>
     </main>
 
